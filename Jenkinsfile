@@ -1,8 +1,11 @@
-@Library('shared_library@main') _  // Correct syntax
+@Library('shared_library@main') _ 
 
 pipeline {
     agent { label 'slave1' }
-
+    triggers {
+        // Trigger at midnight every day
+        cron('2 0 * * *')
+    }
     environment {
         JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
         MAVEN_HOME = '/usr/share/maven'
