@@ -4,7 +4,7 @@ pipeline {
     agent { label 'slave1' }
     triggers {
         // Trigger at midnight every day
-        cron('44 0 * * *')
+        cron('51 15 * * *')
     }
     environment {
         JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
