@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bus-booking-app
-          path: target/bus-booking-app-1.0-SNAPSHOT.jar
+          path: bus_booking-libs-release-local/com/example/bus-booking-app/
 
       # Run the Spring Boot application
       - name: Run Spring Boot App
