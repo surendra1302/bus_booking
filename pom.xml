@@ -6,7 +6,7 @@
     <!-- Group and Artifact Information -->
     <groupId>com.example</groupId>
     <artifactId>bus-booking-app</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.0.${env.GITHUB_RUN_NUMBER}</version>
     <packaging>war</packaging>
     <distributionManagement>
              <repository>
